@@ -1,3 +1,23 @@
 {
-    
+    "name": "Title",
+    "domain": "https://raw.githubusercontent.com/P0t1on/Title/main/",
+    "layer": 3,
+    "width": 50,
+    "height": 50,
+    "baseTile" : "blank",
+    "sprites": [
+        {
+            "name": "player",
+            "src": "sprites/player.svg"
+        }
+    ],
+    "entityDef": [
+        {
+            "name": "wall",
+            "sprite": "wall",
+            "scriptSrc": ""
+        }
+    ],
+    "buildScripts": [
+    ]
 }
