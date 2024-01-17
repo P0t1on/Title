@@ -9,13 +9,17 @@
         {
             "name": "player",
             "src": "sprites/player.svg"
+        },
+        {
+            "name": "wall",
+            "src": "sprites/wall.svg"
         }
     ],
     "entityDef": [
         {
             "name": "wall",
             "sprite": "wall",
-            "scriptSrc": "scripts/Wall.js",
+            "module": "scripts/Wall.js",
             "config": {
                 
             }
