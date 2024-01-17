@@ -15,7 +15,10 @@
         {
             "name": "wall",
             "sprite": "wall",
-            "scriptSrc": ""
+            "scriptSrc": "scripts/Wall.js",
+            "config": {
+                
+            }
         }
     ],
     "buildScripts": [
