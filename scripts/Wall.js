@@ -2,4 +2,4 @@ const Wall = {
     
 }
 
-export default Wall;
+export {Wall};
