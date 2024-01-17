@@ -1,6 +1,6 @@
 {
     "name": "Title",
-    "domain": "https://raw.githubusercontent.com/P0t1on/Title/main/",
+    "domain": "https://raw.githubusercontent.com/P0t1on/Title/main",
     "layer": 3,
     "width": 50,
     "height": 50,
@@ -8,11 +8,11 @@
     "sprites": [
         {
             "name": "player",
-            "src": "sprites/player.svg"
+            "src": "/sprites/player.svg"
         },
         {
             "name": "wall",
-            "src": "sprites/wall.svg"
+            "src": "/sprites/wall.svg"
         }
     ],
     "entityDef": [
