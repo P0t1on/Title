@@ -1,5 +1,1 @@
-const Wall = {
-    
-}
-
-export {Wall};
+console.log(entity)

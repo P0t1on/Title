@@ -21,10 +21,16 @@
             "sprite": "wall",
             "module": "scripts/Wall.js",
             "config": {
-                
+                "moveable": false
             }
         }
     ],
     "buildScripts": [
+        {
+            "method": ["rect", "fill"],
+            "entity": "wall",
+            "position": {"x": 6, "y": 6, "z": 2},
+            "size": {"x": 2, "y": 2}
+        }
     ]
 }
