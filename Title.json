@@ -19,7 +19,7 @@
         {
             "name": "wall",
             "sprite": "wall",
-            "module": "scripts/Wall.js",
+            "module": "/scripts/Wall.js",
             "config": {
                 "moveable": false
             }
