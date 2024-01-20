@@ -31,7 +31,7 @@
             "shape": "rect",
             "entity": "wall",
             "position": {"x": 6, "y": 6, "z": 2},
-            "size": {"x": 2, "y": 2}
+            "size": {"x": 2, "y": 4}
         }
     ],
     "startPoint": {
