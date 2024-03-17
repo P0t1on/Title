@@ -1,40 +1,82 @@
 {
-    "name": "Title",
-    "domain": "https://raw.githubusercontent.com/P0t1on/Title/main",
-    "layer": 3,
-    "width": 50,
-    "height": 50,
-    "baseTile" : "blank",
-    "sprites": [
-        {
-            "name": "player",
-            "src": "/sprites/player.svg"
-        },
-        {
-            "name": "wall",
-            "src": "/sprites/wall.svg"
-        }
-    ],
-    "entityDef": [
-        {
-            "name": "wall",
-            "sprite": "wall",
-            "module": "/scripts/Wall.js",
-            "config": {
-                "moveable": false
-            }
-        }
-    ],
-    "buildScripts": [
-        {
-            "method": "fill",
-            "shape": "rect",
-            "entity": "wall",
-            "position": {"x": 6, "y": 6, "z": 2},
-            "size": {"x": 2, "y": 4}
-        }
-    ],
-    "startPoint": {
-        "x": 5, "y": 5, "z": 2
+  "version": "1.0",
+  "name": "Title",
+  "domain": "https://crispy-potato-jj9r6p49x5vc566v-4000.app.github.dev/FlatWorld",
+  "layer": 3,
+  "width": 30,
+  "height": 30,
+  "baseTile": "blank",
+  "sprites": [
+    {
+      "name": "player",
+      "src": "/sprites/player.svg"
+    },
+    {
+      "name": "wall",
+      "src": "/sprites/wall.svg"
+    },
+    {
+      "name": "blank",
+      "src": "/sprites/blank.svg"
     }
+  ],
+  "entityDef": [
+    {
+      "name": "wall",
+      "sprite": "wall",
+      "module": "/scripts/Wall.ts",
+      "option": {
+        "moveable": false
+      }
+    }
+  ],
+  "status": [
+    {
+      "displayName": "Hp",
+      "id": "hp",
+      "color": "red",
+      "max": 100,
+      "start": 100,
+      "option": {
+        "deathOnZero": true,
+        "visible": true
+      }
+    },
+    {
+      "displayName": "Stamina",
+      "id": "sta",
+      "color": "brown",
+      "max": 100,
+      "start": 100,
+      "option": {
+        "visible": true
+      }
+    },
+    {
+      "displayName": "Gold",
+      "id": "gold",
+      "unit": "g",
+      "color": "yellow",
+      "option": {
+        "visible": true
+      }
+    }
+  ],
+  "generator": "/scripts/Generator.ts",
+  "playerSystem": "/scripts/Player.ts",
+  "define": "/defines/",
+  "buildScripts": [
+    {
+      "method": "fill",
+      "shape": "rect",
+      "entity": "wall",
+      "position": { "x": 6, "y": 6, "z": 0 },
+      "size": { "x": 2, "y": 4 }
+    }
+  ],
+  "startPoint": {
+    "x": 5,
+    "y": 5,
+    "z": 0
+  }
 }
